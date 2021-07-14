@@ -178,3 +178,39 @@ var jogadores = [
 ]
 */
 
+//-------------------------------------------------------------------------------------------------------------------------------
+
+/* INSERT
+//insere o objeto Time1 na tabela times
+var query = database.insert(Time1).into("times").then(data => {
+    console.log(data)
+}).catch(err => {
+    console.log(err)
+})
+
+
+
+//insere o objeto atravez da função inserirTime() 
+var query = database.insert(inserirTime("PSG", "Francês")).into("times").then(data => {
+    console.log(data)
+}).catch(err => {
+    console.log(err)
+})
+
+//insere um array de objetos de times.
+var query = database.insert(Times3).into("times").then(data => {
+    console.log(data)
+}).catch(err => {
+    console.log(err)
+})
+
+//insere um array de objetos de jogadores.
+var query = database.insert(jogadores).into("jogadores").then(data => {
+    console.log(data)
+}).catch(err => {
+    console.log(err)
+})
+*/
+
+//-------------------------------------------------------------------------------------------------------------------------------
+
