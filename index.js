@@ -342,3 +342,25 @@ database.where({id: 1}).update({nome: "Não Pudim"}).table("jogadores").then(dat
 
 //-------------------------------------------------------------------------------------------------------------------------------
 
+//DELETE
+/*
+database.select(["nome"]).where({id: 1}).table("jogadores").then(data => {
+    console.log(data);
+}).catch(err => {
+    console.log(err)
+})
+
+database.where({id:1}).delete().table("jogadores").then(data => {
+    console.log(data)
+    database.select(["nome"]).where({id: 1}).table("jogadores").then(data => {
+        console.log(data);
+    }).catch(err => {
+        console.log(err)
+    })
+}).catch(err => {
+    console.log(err)
+})
+*/
+
+//-------------------------------------------------------------------------------------------------------------------------------
+
