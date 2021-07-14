@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/Ricardenho/BD-Knex/issues"
   },
-  "homepage": "https://github.com/Ricardenho/BD-Knex#readme"
+  "homepage": "https://github.com/Ricardenho/BD-Knex#readme",
+  "dependencies": {
+    "knex": "^0.95.7",
+    "mysql2": "^2.2.5"
+  }
 }
