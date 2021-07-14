@@ -375,3 +375,25 @@ database.select(["times.nome", "jogadores.Nome"]).table("times").innerJoin("joga
 */
 
 //-------------------------------------------------------------------------------------------------------------------------------
+
+// JOIN COM WHERE
+/*
+database.select(["times.nome", "jogadores.Nome", "jogadores.nacionalidade"]).table("times").innerJoin("jogadores", "times.nome", "jogadores.time")
+.where("times.nome","Barcelona")
+.then(data => {
+    console.log(data);
+}).catch(err => {
+    console.log(err)
+})
+*/
+
+/*
+//as Nome_time É para apelidar na flag do objeto
+database.select(["times.nome as Nome_time", "jogadores.Nome", "jogadores.nacionalidade"]).table("times").innerJoin("jogadores", "times.nome", "jogadores.time")
+.where("jogadores.nacionalidade","Brasil")
+.then(data => {
+    console.log(data);
+}).catch(err => {
+    console.log(err)
+})
+*/
