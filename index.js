@@ -214,3 +214,32 @@ var query = database.insert(jogadores).into("jogadores").then(data => {
 
 //-------------------------------------------------------------------------------------------------------------------------------
 
+// SELECT
+/*
+//seleciona todos os times
+database.select().table("times").then(data => {
+    console.log(data);
+}).catch(err => {
+    console.log(err)
+});
+*/
+
+/*
+//seleciona todos os jogadores
+database.select().table("jogadores").then(data => {
+    console.log(data);
+}).catch(err => {
+    console.log(err)
+});
+*/
+
+/*
+//seleciona todos os jogadores mas só os atributos nome e posição
+database.select(["nome", "posicao"]).table("jogadores").then(data => {
+    console.log(data);
+}).catch(err => {
+    console.log(err)
+});
+*/
+
+//-------------------------------------------------------------------------------------------------------------------------------
