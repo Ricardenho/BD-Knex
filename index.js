@@ -364,3 +364,14 @@ database.where({id:1}).delete().table("jogadores").then(data => {
 
 //-------------------------------------------------------------------------------------------------------------------------------
 
+//JOIN
+/*
+database.select(["times.nome", "jogadores.Nome"]).table("times").innerJoin("jogadores", "times.nome", "jogadores.time")
+.then(data => {
+    console.log(data);
+}).catch(err => {
+    console.log(err)
+})
+*/
+
+//-------------------------------------------------------------------------------------------------------------------------------
