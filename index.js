@@ -243,3 +243,79 @@ database.select(["nome", "posicao"]).table("jogadores").then(data => {
 */
 
 //-------------------------------------------------------------------------------------------------------------------------------
+
+//SELECT WHERE
+/*
+//seleciona os times da liga inglesa
+database.select().where({liga: "Inglês"}).table("times").then(data => {
+    console.log(data);
+}).catch(err => {
+    console.log(err)
+})
+*/
+
+/*
+//seleciona os jogadores italianos
+database.select(["nome", "nacionalidade"]).where({nacionalidade: "Italia"}).table("jogadores").then(data => {
+    console.log(data);
+}).catch(err => {
+    console.log(err)
+})
+*/
+
+/*
+//seleciona os jogadores do PSG
+database.select(["nome", "time"]).where({time: "PSG"}).table("jogadores").then(data => {
+    console.log(data);
+}).catch(err => {
+    console.log(err)
+})
+*/
+
+/*
+//seleciona os jogadores meia do Barcelona
+database.select(["nome", "posicao"]).where({posicao: "Meia"}).where({time: "Barcelona"}).table("jogadores").then(data => {
+    console.log(data);
+}).catch(err => {
+    console.log(err)
+})
+*/
+
+/*
+//seleciona algum registro que não existe
+database.select().where({nome: "ggg"}).table("times").then(data => {
+    console.log(data)
+}).catch(err => {
+    console.log(err)
+    
+})
+*/
+
+/*
+//seleciona o jogador neymar, ou todos do Chelsea
+database.select(["nome", "time"]).whereRaw("nome = 'Neymar' OR time = 'Chelsea'").table("jogadores").then(data => {
+    console.log(data)
+}).catch(err => {
+    console.log(err)
+})
+*/
+
+/*
+//consulta nÍvel SQL
+database.raw("SELECT * FROM jogadores where time = 'Real Madrid'").then(data => {
+    console.log(data[0]);
+}).catch(err => {
+    console.log(err)
+})
+*/
+
+/*
+// orderBy (ASC OU DESC)
+database.select(["nome"]).table("jogadores").orderBy("nome", "asc").then(data =>{
+    console.log(data)
+}).catch(err =>{
+    console.log(err)
+})
+*/
+
+//-------------------------------------------------------------------------------------------------------------------------------
